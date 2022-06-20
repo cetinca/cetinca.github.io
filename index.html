@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header>
+    <h1>Cetin CAKIR, <br/>Back-End Developer</h1>
+    <nav>
+        <ul class="links">
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contacts">CONTACTS</a></li>
+            <li><a id="home" href="#home">HOME</a></li>
+        </ul>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    </nav>
+</header>
+<section id="about">
+    <div id="about-pictures">
+        <img id="about-back" src="images/lamp.png">
+        <img id="about-front" src="images/person.png">
+    </div>
+    <div id="about-me">
+        <h2>About me</h2>
+        <p>Hello,
+            My name is Cetin and I am an electrical engineer.
+            For long years I worked in industrial facilities and managed production and maintenance departments. Three years ago I joined IT.
+            Between 2019 and 2021 I worked on a ride-sharing project and designed a charging station with Raspberry PI3 and created a socket server/client with Python. During that project, I learned Python, Linux, SQL, MongoDB, HTML, and CSS.
+            In 2021 i started to work as a freelancer by the time I continued to study.
+            By the time I studied, Linux, SQL, Git, Flask and FastAPI. Also learned the fundamentals of Docker.
+            Right now, as a freelance developer, I create projects with Pyhton, and Bash via Upwork.
+        </p>
+        <div class="Skills">
+        <p><strong>Skills:</strong><span>Python, Linux, SQL, Flask, FastAPI</span></p>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div id="port-pics">
+        <div>
+            <img id="project1" src="images/project1.png">
+            <p class="portfolio__title">Flashcards
+                <button id="myBtn" class="open-window">Detail</button>
+            </p>
+        </div>
+        <div>
+            <img id="project2" src="images/project2.png">
+            <p class="portfolio__title">TCP Server
+                <button id="myBtn2" class="open-window">Detail</button>
+            </p>
+        </div>
+        <div>
+            <img id="project3" src="images/project3.png">
+            <p class="portfolio__title">FastAPI
+                <button id="myBtn3" class="open-window">Detail</button>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="contacts">
+    <h2>Contact</h2>
+    <p>You can contact me via GitHub.</p>
+    <div id="social">
+        <a href="https://github.com/cetinca"><img src="./images/github.svg" alt="GitHub"></a>
+        <a href="https://hyperskill.org/profile/136654234"><img src="./images/jetbrains.svg" alt="Jetbrains"></a>
+    </div>
+</section>
+<footer>
+    <p>Cetin CAKIR</p>
+    <p>2022</p>
+</footer>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="window">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Flashcard</h3>
+        <p>A flashcard or flash card (also known as an index card) is a card bearing information on both sides, which is
+            intended to be used as an aid in memorization. Each flashcard bears a question on one side and an answer on
+            the other. Flashcards are often used to memorize vocabulary, historical dates, formulas or any subject
+            matter that can be learned via a question-and-answer format. Flashcards can be virtual (part of a flashcard
+            software), or physical.
+            Flashcards are an application of the testing effect − the finding that long-term memory is increased when
+            some of the learning period is devoted to retrieving the information through testing with proper feedback.
+            Study habits affect the rate at which a flashcard-user learns, and proper spacing of flashcards has been
+            proven to accelerate learning. A number of spaced repetition software programs exist which take advantage of
+            this principle.</p>
+    </div>
+</div>
+<div id="myModal2" class="modal">
+    <!-- Modal content -->
+    <div class="window">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>TCP Server</h3>
+        <p>It is a TCP server to communicate with vehicles. It allows you to control electrical vehichles like scooters,
+            and electrical bikes. It is listening a defined port, get real time data from IOT's and are 
+            able to lock/unlock remotely.</p>
+    </div>
+</div>
+<div id="myModal3" class="modal">
+    <!-- Modal content -->
+    <div class="window">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>FastAPI</h3>
+        <p>It is a FastAPI service. Adds removes cities to a database. And displays weather data of the requested city.</p>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script2.js"></script>
+</body>
+</html>
